@@ -1,0 +1,4 @@
+namespace convex_ffi {};
+
+[Custom]
+typedef f64 Float64;

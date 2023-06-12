@@ -1,0 +1,23 @@
+[package]
+name = "convex-ffi"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+[lib]
+name = "convex_ffi"
+crate-type = ["cdylib", "staticlib"]
+
+[build-dependencies]
+uniffi = { workspace = true, features = ["build"] }
+
+[dependencies]
+anyhow = "1.0"
+convex = "0.2"
+futures = "0.3"
+ordered-float = "3.7"
+tokio = { version = "1" }
+tracing = "0.1"
+tracing-subscriber = "0.3"
+uniffi = { workspace = true, features = ["tokio"] }
+uniffi_bindgen = { workspace = true }

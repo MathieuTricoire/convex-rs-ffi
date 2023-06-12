@@ -1,0 +1,11 @@
+[workspace]
+members = ["convex-ffi", "xtask"]
+default-members = ["convex-ffi"]
+resolver = "2"
+
+[workspace.package]
+rust-version = "1.65"
+
+[workspace.dependencies]
+uniffi = { git = "https://github.com/mozilla/uniffi-rs" }
+uniffi_bindgen = { git = "https://github.com/mozilla/uniffi-rs" }

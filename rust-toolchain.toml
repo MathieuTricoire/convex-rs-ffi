@@ -1,0 +1,15 @@
+[toolchain]
+channel = "stable"
+targets = [
+    # Kotlin
+    "aarch64-linux-android",
+    "armv7-linux-androideabi",
+    "i686-linux-android",
+    "x86_64-linux-android",
+    # Swift
+    "aarch64-apple-ios",     # iOS
+    "aarch64-apple-ios-sim", # iOS Simulator (Apple Silicon)
+    "x86_64-apple-ios",      # iOS Simulator (Intel x86)
+    "aarch64-apple-darwin",  # macOS (Apple Silicon)
+    "x86_64-apple-darwin",   # macOS (Intel x86)
+]
