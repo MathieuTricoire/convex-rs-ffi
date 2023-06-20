@@ -200,7 +200,7 @@ fn update_swift_file(file_path: PathBuf) -> Result<()> {
 
     let new_contents = contents.replace(
         "public enum Value {",
-        "@dynamicMemberLookup\npublic enum Value {",
+        "@dynamicMemberLookup\npublic enum Value: Sendable {",
     );
 
     let mut file = OpenOptions::new()
